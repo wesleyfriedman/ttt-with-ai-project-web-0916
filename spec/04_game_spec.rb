@@ -210,7 +210,6 @@ describe 'Game' do
       allow(game.player_2).to receive(:gets).and_return("4", "5")
 
       expect(game).to receive(:over?).at_least(:twice).and_return(false, false, true)
-
       game.play
     end
 
