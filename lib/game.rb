@@ -11,6 +11,10 @@ class Game
 		@board = board
 	end
 
+	def self.winning_combos
+		WINNING_COMBINATIONS
+	end
+
 	def current_player
 		board.turn_count.even? ? player_1 : player_2
 	end
